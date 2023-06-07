@@ -24,10 +24,14 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+plugins {
+	id "org.sonarqube" version "4.2.0.3129"
+}
+
 sonarqube {
 	properties {
-		property "sonar.projectKey", "walgomwizeline_JunitDemo"
-		property "sonar.organization", "walgomwizeline"
+		property "sonar.projectKey", "AntonioBristen_EjercicioJUnit"
+		property "sonar.organization", "antoniobristen"
 		property "sonar.host.url", "https://sonarcloud.io"
 	}
 }
